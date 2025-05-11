@@ -1,0 +1,40 @@
+node_modules
+.DS_Store
+*.local
+yarn-error.log
+.vscode
+
+.env*
+
+/src/scratch.ts
+/build
+/coverage
+/tmp
+/vitest.config.ts.timestamp*
+/local_publish
+/local_export
+
+/src/client/clarity/grammar.js
+/src/client/clarity/grammar.terms.js
+.env.sentry-build-plugin
+
+playwright-report
+test-results
+
+/dist
+.vite
+
+vite.config.ts.timestamp*
+
+# pnpm
+.pnpm-store/
+
+# Dist directories
+packages/*/dist
+
+# zero
+zero-schema.json
+.permissions.sql
+
+# Tanstack
+routeTree.gen.ts

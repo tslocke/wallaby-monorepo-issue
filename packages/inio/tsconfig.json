@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext", "dom", "dom.iterable"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+
+    "outDir": "dist",
+
+    "allowJs": true,
+    "verbatimModuleSyntax": true,
+    "noUncheckedIndexedAccess": false,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "jsxImportSource": "solid-js",
+    "isolatedModules": true,
+    "types": ["vite/client", "node", "vitest/globals"],
+
+    "baseUrl": "../../packages",
+    "paths": {
+      "@client/*": ["inio/src/client/*"],
+      "@server/*": ["inio/src/server/*"],
+      "@shared/*": ["inio/src/shared/*"],
+      "@tests/*": ["inio/tests/*"],
+      "@inio/clarity": ["clarity/src/index.ts"],
+      "@inio/appkit/*": ["appkit/src/*"],
+      "@inio/appkit": ["appkit/src/index.ts"],
+      "@inio/clarity/*": ["clarity/src/*"],
+    }
+  },
+  "include": ["src", "tests", "dev"],
+  "exclude": ["node_modules"]
+}

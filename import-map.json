@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@inio/clarity": "./packages/clarity/src/index.ts",
+    "@inio/appkit": "./packages/appkit/src/index.ts"
+  }
+}

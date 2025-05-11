@@ -1,0 +1,42 @@
+{
+  "name": "@inio/clarity",
+  "version": "0.0.1",
+  "description": "Clarity template engine",
+  "type": "module",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "dev": "tsup src/index.ts --format esm --dts --watch",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.24.5",
+    "@babel/standalone": "^7.27.0",
+    "@babel/traverse": "^7.27.1",
+    "@babel/types": "^7.24.5",
+    "@inio/appkit": "workspace:*",
+    "@lezer/common": "^1.2.3",
+    "@lezer/generator": "^1.5.1",
+    "@lezer/lr": "^1.4.2",
+    "@types/browser-util-inspect": "^0.2.4",
+    "browser-util-inspect": "^0.2.0",
+    "chokidar": "^4.0.3",
+    "commander": "^13.1.0",
+    "escape-html": "^1.0.3",
+    "inflection": "^2.0.1",
+    "ramda": "^0.29.1"
+  },
+  "devDependencies": {
+    "@types/babel__standalone": "^7.1.9",
+    "@types/chokidar": "^2.1.7",
+    "@types/commander": "^2.12.5",
+    "@types/escape-html": "^1.0.4",
+    "@types/ramda": "^0.30.2",
+    "tsup": "^8.0.2",
+    "typescript": "~5.4",
+    "vitest": "^1.4"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    "paths": {
+      "@": ["./src"],
+      "@inio/appkit/*": ["../appkit/src/*"],
+      "@inio/appkit": ["../appkit/src/index.ts"],
+    }
+  },
+  "include": ["src"]
+} 
