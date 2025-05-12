@@ -1,3 +1,3 @@
-export function render() {
-  
+export function doSomething() {
+  return 1
 }
